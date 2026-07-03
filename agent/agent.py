@@ -2,7 +2,6 @@ import os
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-
 from .tools import (
     get_upcoming_race,
     get_driver_standings,
@@ -12,8 +11,16 @@ from .tools import (
 )
 
 load_dotenv()
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+def _get_api_key() -> str:
+    try:
+        import streamlit as st
+        return st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY", ""))
+    except Exception:
+        return os.environ.get("GEMINI_API_KEY", "")
+
+client = genai.Client(api_key=_get_api_key())
 
 SYSTEM_PROMPT = """You are an F1 Race Strategy Analyst. Your job is to identify the best-value drivers for the upcoming race.
 

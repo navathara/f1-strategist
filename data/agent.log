@@ -1,0 +1,53 @@
+2026-07-03 14:56:18,621 — AFC is enabled with max remote calls: 15.
+2026-07-03 14:56:20,091 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:56:20,100 — TOOL: get_upcoming_race called
+2026-07-03 14:56:21,723 — AFC remote call 1 is done.
+2026-07-03 14:56:22,996 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:56:23,001 — TOOL: get_driver_standings called
+2026-07-03 14:56:24,505 — AFC remote call 2 is done.
+2026-07-03 14:56:25,495 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:56:25,498 — TOOL: get_circuit_history called | circuit_id=silverstone
+2026-07-03 14:56:30,426 — AFC remote call 3 is done.
+2026-07-03 14:56:32,725 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:56:32,728 — TOOL: get_recent_form called | driver_id=antonelli
+2026-07-03 14:56:34,526 — TOOL: get_recent_form called | driver_id=russell
+2026-07-03 14:56:36,417 — TOOL: get_recent_form called | driver_id=hamilton
+2026-07-03 14:56:37,902 — TOOL: get_recent_form called | driver_id=piastri
+2026-07-03 14:56:39,513 — TOOL: get_recent_form called | driver_id=norris
+2026-07-03 14:56:40,851 — TOOL: get_recent_form called | driver_id=leclerc
+2026-07-03 14:56:42,134 — AFC remote call 4 is done.
+2026-07-03 14:56:45,456 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:56:45,462 — TOOL: get_value_score called | driver_id=antonelli
+2026-07-03 14:56:45,462 — TOOL: get_driver_standings called
+2026-07-03 14:56:46,951 — TOOL: get_recent_form called | driver_id=antonelli
+2026-07-03 14:56:48,056 — TOOL: get_value_score called | driver_id=russell
+2026-07-03 14:56:48,056 — TOOL: get_driver_standings called
+2026-07-03 14:56:49,167 — TOOL: get_recent_form called | driver_id=russell
+2026-07-03 14:56:50,420 — TOOL: get_value_score called | driver_id=hamilton
+2026-07-03 14:56:50,420 — TOOL: get_driver_standings called
+2026-07-03 14:56:51,519 — TOOL: get_recent_form called | driver_id=hamilton
+2026-07-03 14:56:52,637 — TOOL: get_value_score called | driver_id=piastri
+2026-07-03 14:56:52,637 — TOOL: get_driver_standings called
+2026-07-03 14:56:54,104 — TOOL: get_recent_form called | driver_id=piastri
+2026-07-03 14:56:55,283 — TOOL: get_value_score called | driver_id=norris
+2026-07-03 14:56:55,283 — TOOL: get_driver_standings called
+2026-07-03 14:56:56,780 — TOOL: get_recent_form called | driver_id=norris
+2026-07-03 14:56:58,214 — TOOL: get_value_score called | driver_id=leclerc
+2026-07-03 14:56:58,214 — TOOL: get_driver_standings called
+2026-07-03 14:56:59,492 — TOOL: get_recent_form called | driver_id=leclerc
+2026-07-03 14:57:01,168 — TOOL: get_value_score called | driver_id=max_verstappen
+2026-07-03 14:57:01,168 — TOOL: get_driver_standings called
+2026-07-03 14:57:02,345 — TOOL: get_recent_form called | driver_id=max_verstappen
+2026-07-03 14:57:03,781 — AFC remote call 5 is done.
+2026-07-03 14:57:16,544 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-03 14:57:16,549 — TOOL: get_value_score called | driver_id=hulkenberg
+2026-07-03 14:57:16,549 — TOOL: get_driver_standings called
+2026-07-03 14:57:17,695 — TOOL: get_recent_form called | driver_id=hulkenberg
+2026-07-03 14:57:18,992 — TOOL: get_value_score called | driver_id=sainz
+2026-07-03 14:57:18,992 — TOOL: get_driver_standings called
+2026-07-03 14:57:20,118 — TOOL: get_recent_form called | driver_id=sainz
+2026-07-03 14:57:21,424 — TOOL: get_value_score called | driver_id=albon
+2026-07-03 14:57:21,424 — TOOL: get_driver_standings called
+2026-07-03 14:57:22,861 — TOOL: get_recent_form called | driver_id=albon
+2026-07-03 14:57:24,470 — AFC remote call 6 is done.
+2026-07-03 14:57:37,171 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"

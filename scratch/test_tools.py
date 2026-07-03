@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from agent.tools import (
     get_upcoming_race,
     get_driver_standings,
@@ -5,9 +9,6 @@ from agent.tools import (
     get_circuit_history,
     get_value_score
 )
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("1. Upcoming race:")
 print(get_upcoming_race())
