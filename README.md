@@ -1,6 +1,5 @@
 # F1 Race Strategist Agent
 
-# 🏎️ F1 Race Strategy Agent
 
 > Live demo: [f1-strategist.streamlit.app](https://f1-strategist.streamlit.app)
 
