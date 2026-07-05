@@ -498,3 +498,7 @@
 2026-07-05 17:19:24,591 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
 2026-07-05 17:20:29,595 — AFC is enabled with max remote calls: 10.
 2026-07-05 17:20:58,552 — HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:33:19,001 — TOOL: get_driver_standings called
+2026-07-05 17:33:20,497 — TOOL: get_upcoming_race called
+2026-07-05 17:33:23,385 — TOOL: get_driver_standings called
+2026-07-05 17:33:24,573 — TOOL: get_upcoming_race called
