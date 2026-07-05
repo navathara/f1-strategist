@@ -116,10 +116,28 @@ st.markdown("""
 </p>""", unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("🏆 Leader", "Antonelli", "171 pts")
-col2.metric("🥈 P2", "Russell", "131 pts")
-col3.metric("🥉 P3", "Hamilton", "125 pts")
-col4.metric("🏁 Next Race", "British GP", "Silverstone")
+
+if "live_standings" not in st.session_state:
+    from agent.tools import get_driver_standings, get_upcoming_race
+    st.session_state.live_standings = get_driver_standings()
+    st.session_state.live_race = get_upcoming_race()
+
+standings = st.session_state.live_standings
+race = st.session_state.live_race
+
+if standings and "error" not in standings[0]:
+    p1, p2, p3 = standings[0], standings[1], standings[2]
+    col1.metric("🏆 Leader", p1["name"].split()[-1], f"{int(p1['points'])} pts")
+    col2.metric("🥈 P2", p2["name"].split()[-1], f"{int(p2['points'])} pts")
+    col3.metric("🥉 P3", p3["name"].split()[-1], f"{int(p3['points'])} pts")
+else:
+    col1.metric("🏆 Leader", "—", "—")
+    col2.metric("🥈 P2", "—", "—")
+    col3.metric("🥉 P3", "—", "—")
+
+race_name = race.get("race_name", "British GP") if "error" not in race else "British GP"
+circuit = race.get("circuit_name", "Silverstone") if "error" not in race else "Silverstone"
+col4.metric("🏁 Next Race", race_name.replace(" Grand Prix", " GP"), circuit)
 
 st.markdown("<div style='margin:1.5rem 0;'></div>", unsafe_allow_html=True)
 
